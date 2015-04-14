@@ -15,8 +15,8 @@ RUN yum clean all
 # supervisord
 RUN /usr/bin/pip install supervisor
 
-# php
+# ruby
 RUN git clone https://github.com/tagomoris/xbuild
-RUN xbuild/php-install 5.5.10 ~/local/php-5.5.10
+RUN xbuild/ruby-install 2.1.2 /opt/ruby
 
 CMD /bin/bash
